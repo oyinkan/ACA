@@ -172,15 +172,18 @@ body {
 .login-div {
   background: url(./../../assets/img/deploy.png);
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
-  height: 350px;
+  height: 750px;
   margin-top: -50px;
+  margin-bottom: -20px;
 }
 .logindiv {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
   background: #fff;
   padding: 60px 40px;
+  margin-top: 75px;
 }
 .createaccount-div {
   clear: both;
@@ -196,7 +199,7 @@ body {
   text-align: center;
 }
 .carousel-indicators {
-  top: 100px;
+  bottom: -25%;
 }
 .carousel-indicators li {
   width: 10px;
@@ -207,10 +210,15 @@ body {
 .carousel-indicators .active {
   border: 1px solid #fff;
 }
+.carousel p {
+  color: #fff;
+  font-size: 25px;
+}
 .calendar {
   position: absolute;
-  right: 25%;
+  right: 30px;
   margin-top: 15px;
+  z-index: 1;
 }
 .ml-60 {
   margin-left: 60px;
@@ -232,7 +240,29 @@ body {
     height: 25px;
   }
   .nav-tabs .nav-item {
-    width: auto;
+    width: 100%;
+  }
+  .ml-60 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logindiv {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-tabs .nav-item {
+    width: 100%;
+  }
+  .calendar {
+    margin-top: -48px;
+  }
+  #newapp-div {
+    margin-right: 25px;
+  }
+  .login-div {
+    height: auto;
+    padding-bottom: 90px;
   }
 }
 
